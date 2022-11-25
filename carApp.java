@@ -37,5 +37,36 @@ while
 
 	}
 
+}//end of main
+
+//class Car containing the methods and encapsulation
+class Car{
+	 private String brand;
+	    private String model;
+	    private int amountOfFuel; 
+	    
+	    
+	    public Car()
+	    {
+	        brand = "";
+	        model = "";
+	        amountOfFuel = 0;
+	    }
+	    public void accelerate()
+		 {
+			 System.out.println("Car is accelerating");
+		 }
+		public void brake()
+		{
+			System.out.println("Car is breaking");
+		}
+
+	 public void printData (String brand, String model, int amountOfFuel) {
+		
+			System.out.println("Brand: " + brand);
+			System.out.println("Model: " + model);
+			System.out.println("Fuel: " + amountOfFuel);
+		}
+	
 }
 
